@@ -79,7 +79,7 @@ class OrderServiceApplicationTests {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/order"))
                 .andExpect(status().isOk());
 
-        System.out.println(orderRepository.findAll());
+        log.info("{}", orderRepository.findAll());
     }
 
     private OrderRequest getOrderRequest() {

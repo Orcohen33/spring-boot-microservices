@@ -1,16 +1,15 @@
-package com.orcohen.orderservice.dto;
+package com.orcohen.inventoryservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderRequest {
-    private List<OrderLineItemsDto> orderLineItemsDtoList;
+public class InventoryRequest {
+    private String skuCode;
+    private Integer quantity;
 }
