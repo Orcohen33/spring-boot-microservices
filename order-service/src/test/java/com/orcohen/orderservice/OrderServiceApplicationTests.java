@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.testcontainers.containers.MySQLContainer;
@@ -30,11 +32,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class OrderServiceApplicationTests {
 
     @Container
-    private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer(
+    private static final MySQLContainer MY_SQL_CONTAINER = (MySQLContainer) new MySQLContainer(
             "mysql:8.0.23")
-            .withDatabaseName("order_service")
+            .withDatabaseName("order-service")
             .withUsername("root")
-            .withPassword("root");
+            .withPassword("root")
+            .withExposedPorts(3306);
+
+    @DynamicPropertySource
+    static void setProperties(DynamicPropertyRegistry registry) {
+        MY_SQL_CONTAINER.start();
+        if (MY_SQL_CONTAINER.isRunning()) {
+            registry.add("spring.datasource.url", MY_SQL_CONTAINER::getJdbcUrl);
+            registry.add("spring.datasource.username", MY_SQL_CONTAINER::getUsername);
+            registry.add("spring.datasource.password", MY_SQL_CONTAINER::getPassword);
+        }
+    }
+
+
     @Autowired
     private MockMvc mockMvc;    // injected by @RequiredArgsConstructor
     @Autowired
@@ -55,37 +70,16 @@ class OrderServiceApplicationTests {
                 .andExpect(status().isCreated());
         // then
         Assertions.assertEquals(1, orderRepository.findAll().size());
-        // logs
-        log.info("Order placed successfully");
-        log.info("Orders: {}", orderRepository.findAll().stream().map(order -> {
-            String orderLineItems = order.getOrderLineItemsList().stream()
-                    .map(orderLineItem -> orderLineItem.getSkuCode() + " " + orderLineItem.getQuantity() + " " + orderLineItem.getPrice())
-                    .collect(Collectors.joining(", "));
-            return order.getOrderNumber() + " " + orderLineItems;
-        }).collect(Collectors.toList()));
+
     }
 
     @Test
     @DisplayName("Get all orders")
     void shouldGetAllOrders() throws Exception {
-        // given
-        OrderRequest orderRequest = getOrderRequest();
-        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);
-        // when
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/order")
-                        .contentType("application/json")
-                        .content(orderRequestJson))
-                .andExpect(status().isCreated());
-        // then
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/order"))
                 .andExpect(status().isOk());
-        // logs
-        log.info("Orders: {}", orderRepository.findAll().stream().map(order -> {
-            String orderLineItems = order.getOrderLineItemsList().stream()
-                    .map(orderLineItem -> orderLineItem.getSkuCode() + " " + orderLineItem.getQuantity() + " " + orderLineItem.getPrice())
-                    .collect(Collectors.joining(", "));
-            return order.getOrderNumber() + " " + orderLineItems;
-        }).collect(Collectors.toList()));
+
+        System.out.println(orderRepository.findAll());
     }
 
     private OrderRequest getOrderRequest() {

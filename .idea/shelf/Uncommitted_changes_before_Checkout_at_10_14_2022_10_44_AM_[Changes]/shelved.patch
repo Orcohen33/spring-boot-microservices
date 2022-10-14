@@ -1,0 +1,471 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"jpab\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision a9094a1a72cbd7a4e9601f8849b9fde896a4c80b)
++++ b/.idea/misc.xml	(date 1665737039975)
+@@ -5,7 +5,14 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/pom.xml" />
++        <option value="$PROJECT_DIR$/inventory-service/pom.xml" />
++        <option value="$PROJECT_DIR$/order-service/pom.xml" />
+       </list>
++    </option>
++    <option name="ignoredFiles">
++      <set>
++        <option value="$PROJECT_DIR$/product-service/pom.xml" />
++      </set>
+     </option>
+   </component>
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+Index: .idea/azure/azureSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/azure/azureSettings.xml b/.idea/azure/azureSettings.xml
+new file mode 100644
+--- /dev/null	(date 1665737049554)
++++ b/.idea/azure/azureSettings.xml	(date 1665737049554)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AzureSettings">
++    <option name="appInsights" value="rO0ABXVyAEtbTGNvbS5taWNyb3NvZnQuYXBwbGljYXRpb25pbnNpZ2h0cy5wcmVmZXJlbmNlLkFwcGxpY2F0aW9uSW5zaWdodHNSZXNvdXJjZTvCzxEP0C2HbAIAAHhwAAAAAA==" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"31c8b28e-f34d-4948-a72b-b4d63052114b\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/jpa-buddy.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/InventoryServiceApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/controller/InventoryController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/model/Inventory.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/repository/InventoryRepository.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/service/InventoryService.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/inventory-service/src/test/java/com/orcohen/inventoryservice/InventoryServiceApplicationTests.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/OrderServiceApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/controller/OrderController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderLineItemsDto.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderRequest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderResponse.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/model/Order.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/model/OrderLineItems.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/repository/OrderRepository.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/service/OrderService.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/ProductServiceApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/controller/ProductController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/dto/ProductRequest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/dto/ProductResponse.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/model/Product.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/repository/ProductRepository.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/service/ProductService.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/product-service/src/test/java/com/orcohen/productservice/ProductServiceApplicationTests.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"package.json\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"JpbToolWindowState\">\r\n    <option name=\"myId2FirstActivated\">\r\n      <map>\r\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"true\" />\r\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\r\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"true\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"myId2Visible\">\r\n      <map>\r\n        <entry key=\"com.haulmont.jpb.jpaInspector\" value=\"true\" />\r\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\r\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"false\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2G2O5MQe6qp5pgTNThZQUeUOBtM\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"jdk.selected.JAVA_MODULE\": \"17\",\r\n    \"last_opened_file_path\": \"C:/Users/orcoh/Desktop/Programming/Projects/online-shopping-application/microservices/microservices-new/pom.xml\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"spring.configuration.checksum\": \"82177c4ea6e983232776383e4543ffc3\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\orcoh\\Desktop\\Programming\\Projects\\online-shopping-application\\zip-files\\microservices\\microservices-new\\inventory-service\" />\r\n      <recent name=\"C:\\Users\\orcoh\\Desktop\\Programming\\Projects\\online-shopping-application\\zip-files\\microservices\\microservices-new\\order-service\" />\r\n      <recent name=\"C:\\Users\\orcoh\\Desktop\\Programming\\Projects\\online-shopping-application\\zip-files\\microservices\\microservices-new\\product-service\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"mvn clean verify\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"configurationTypes\">\r\n      <set>\r\n        <option value=\"SpringBootApplicationConfigurationType\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.OrderServiceApplicationTests.shouldGetAllOrders\">\r\n    <configuration name=\"OrderServiceApplicationTests.shouldDeleteOrderById\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"order-service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.orcohen.orderservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.orcohen.orderservice\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.orcohen.orderservice.OrderServiceApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldDeleteOrderById\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"OrderServiceApplicationTests.shouldGetAllOrders\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"order-service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.orcohen.orderservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.orcohen.orderservice\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.orcohen.orderservice.OrderServiceApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldGetAllOrders\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"OrderServiceApplicationTests.shouldPlaceOrder\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"order-service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.orcohen.orderservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.orcohen.orderservice\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.orcohen.orderservice.OrderServiceApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldPlaceOrder\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ProductServiceApplicationTests.shouldCreateProduct\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"product-service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.orcohen.productservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.orcohen.productservice\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.orcohen.productservice.ProductServiceApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldCreateProduct\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ProductServiceApplicationTests.shouldGetAllProducts\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"product-service\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.orcohen.productservice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.orcohen.productservice\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.orcohen.productservice.ProductServiceApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldGetAllProducts\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"InventoryServiceApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"inventory-service\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.orcohen.inventoryservice.InventoryServiceApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"OrderServiceApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"order-service\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.orcohen.orderservice.OrderServiceApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ProductServiceApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"product-service\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.orcohen.productservice.ProductServiceApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.OrderServiceApplicationTests.shouldGetAllOrders\" />\r\n        <item itemvalue=\"JUnit.ProductServiceApplicationTests.shouldGetAllProducts\" />\r\n        <item itemvalue=\"JUnit.OrderServiceApplicationTests.shouldDeleteOrderById\" />\r\n        <item itemvalue=\"JUnit.OrderServiceApplicationTests.shouldPlaceOrder\" />\r\n        <item itemvalue=\"JUnit.ProductServiceApplicationTests.shouldCreateProduct\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"31c8b28e-f34d-4948-a72b-b4d63052114b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665583029284</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665583029284</updated>\r\n      <workItem from=\"1665583030750\" duration=\"1471000\" />\r\n      <workItem from=\"1665591455795\" duration=\"4037000\" />\r\n      <workItem from=\"1665596537487\" duration=\"624000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a9094a1a72cbd7a4e9601f8849b9fde896a4c80b)
++++ b/.idea/workspace.xml	(date 1665737040279)
+@@ -4,79 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="31c8b28e-f34d-4948-a72b-b4d63052114b" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/controller/InventoryController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/model/Inventory.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/repository/InventoryRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/orcohen/inventoryservice/service/InventoryService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/orcohen/inventoryservice/InventoryServiceApplicationTests.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/OrderServiceApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/controller/OrderController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderLineItemsDto.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderRequest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/dto/OrderResponse.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/model/Order.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/model/OrderLineItems.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/repository/OrderRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/orcohen/orderservice/service/OrderService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/ProductServiceApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/controller/ProductController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/dto/ProductRequest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/dto/ProductResponse.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/model/Product.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/repository/ProductRepository.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/orcohen/productservice/service/ProductService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/com/orcohen/productservice/ProductServiceApplicationTests.java" afterDir="false" />
+-    </list>
++    <list default="true" id="31c8b28e-f34d-4948-a72b-b4d63052114b" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="package.json" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="JpbToolWindowState">
+-    <option name="myId2FirstActivated">
+-      <map>
+-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+-      </map>
+-    </option>
+-    <option name="myId2Visible">
+-      <map>
+-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+-  </component>
+   <component name="ProjectId" id="2G2O5MQe6qp5pgTNThZQUeUOBtM" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -85,162 +18,11 @@
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "jdk.selected.JAVA_MODULE": "17",
+-    "last_opened_file_path": "C:/Users/orcoh/Desktop/Programming/Projects/online-shopping-application/microservices/microservices-new/pom.xml",
+-    "nodejs_package_manager_path": "npm",
+-    "spring.configuration.checksum": "82177c4ea6e983232776383e4543ffc3"
++    "WebServerToolWindowFactoryState": "false"
+   }
+ }]]></component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\inventory-service" />
+-      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\order-service" />
+-      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\product-service" />
+-    </key>
+-  </component>
+-  <component name="RunAnythingCache">
+-    <option name="myCommands">
+-      <command value="mvn clean verify" />
+-    </option>
+-  </component>
+-  <component name="RunDashboard">
+-    <option name="configurationTypes">
+-      <set>
+-        <option value="SpringBootApplicationConfigurationType" />
+-      </set>
+-    </option>
+-  </component>
+-  <component name="RunManager" selected="JUnit.OrderServiceApplicationTests.shouldGetAllOrders">
+-    <configuration name="OrderServiceApplicationTests.shouldDeleteOrderById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="order-service" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.orcohen.orderservice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
+-      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
+-      <option name="METHOD_NAME" value="shouldDeleteOrderById" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="OrderServiceApplicationTests.shouldGetAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="order-service" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.orcohen.orderservice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
+-      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
+-      <option name="METHOD_NAME" value="shouldGetAllOrders" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="OrderServiceApplicationTests.shouldPlaceOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="order-service" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.orcohen.orderservice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
+-      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
+-      <option name="METHOD_NAME" value="shouldPlaceOrder" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="ProductServiceApplicationTests.shouldCreateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="product-service" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.orcohen.productservice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.orcohen.productservice" />
+-      <option name="MAIN_CLASS_NAME" value="com.orcohen.productservice.ProductServiceApplicationTests" />
+-      <option name="METHOD_NAME" value="shouldCreateProduct" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="ProductServiceApplicationTests.shouldGetAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="product-service" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.orcohen.productservice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.orcohen.productservice" />
+-      <option name="MAIN_CLASS_NAME" value="com.orcohen.productservice.ProductServiceApplicationTests" />
+-      <option name="METHOD_NAME" value="shouldGetAllProducts" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="JetRunConfigurationType">
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+-      <option name="filePath" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+-      <module name="inventory-service" />
+-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.inventoryservice.InventoryServiceApplication" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+-      <module name="order-service" />
+-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.orderservice.OrderServiceApplication" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+-      <module name="product-service" />
+-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.productservice.ProductServiceApplication" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldGetAllOrders" />
+-        <item itemvalue="JUnit.ProductServiceApplicationTests.shouldGetAllProducts" />
+-        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldDeleteOrderById" />
+-        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldPlaceOrder" />
+-        <item itemvalue="JUnit.ProductServiceApplicationTests.shouldCreateProduct" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -249,24 +31,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1665583029284</updated>
+-      <workItem from="1665583030750" duration="1471000" />
+-      <workItem from="1665591455795" duration="4037000" />
+-      <workItem from="1665596537487" duration="624000" />
+     </task>
+     <servers />
+   </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+ </project>
+\ No newline at end of file
+Index: order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.orcohen.orderservice;\r\n\r\nimport com.fasterxml.jackson.databind.ObjectMapper;\r\nimport com.orcohen.orderservice.dto.OrderLineItemsDto;\r\nimport com.orcohen.orderservice.dto.OrderRequest;\r\nimport com.orcohen.orderservice.repository.OrderRepository;\r\nimport lombok.extern.slf4j.Slf4j;\r\nimport org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.BeforeAll;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.boot.test.autoconfigure.properties.PropertyMapping;\r\nimport org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;\r\nimport org.springframework.boot.test.context.SpringBootTest;\r\nimport org.springframework.test.context.DynamicPropertyRegistry;\r\nimport org.springframework.test.context.DynamicPropertySource;\r\nimport org.springframework.test.web.servlet.MockMvc;\r\nimport org.springframework.test.web.servlet.request.MockMvcRequestBuilders;\r\nimport org.testcontainers.containers.MySQLContainer;\r\nimport org.testcontainers.junit.jupiter.Container;\r\nimport org.testcontainers.junit.jupiter.Testcontainers;\r\n\r\nimport java.math.BigDecimal;\r\nimport java.util.List;\r\nimport java.util.stream.Collectors;\r\n\r\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;\r\n\r\n@SpringBootTest\r\n@Testcontainers\r\n@AutoConfigureMockMvc\r\n@Slf4j\r\nclass OrderServiceApplicationTests {\r\n\r\n    @Container\r\n    static MySQLContainer<?> mySQLContainer = new MySQLContainer<>(\"mysql:8.0.31\")\r\n            .withDatabaseName(\"order_service\")\r\n            .withUsername(\"something\")\r\n            .withPassword(\"something\")\r\n            .withExposedPorts(3306);\r\n\r\n    @DynamicPropertySource\r\n    static void setProperties(DynamicPropertyRegistry registry) {\r\n        registry.add(\"spring.datasource.url\", mySQLContainer::getJdbcUrl);\r\n        registry.add(\"spring.datasource.username\", mySQLContainer::getUsername);\r\n        registry.add(\"spring.datasource.password\", mySQLContainer::getPassword);\r\n        registry.add(\"spring.datasource.driver-class-name\", mySQLContainer::getDriverClassName);\r\n        registry.add(\"spring.jpa.database-platform\", () -> \"org.hibernate.dialect.MySQL8Dialect\");\r\n        mySQLContainer.start();\r\n    }\r\n\r\n//    @BeforeAll\r\n//    public static void setUp() {\r\n//        mySQLContainer.start();\r\n//    }\r\n    @Autowired\r\n    private MockMvc mockMvc;    // injected by @RequiredArgsConstructor\r\n    @Autowired\r\n    private ObjectMapper objectMapper;    // injected by @RequiredArgsConstructor\r\n    @Autowired\r\n    private OrderRepository orderRepository;    // injected by @RequiredArgsConstructor\r\n\r\n    @Test\r\n    @DisplayName(\"Place order\")\r\n    void shouldPlaceOrder() throws Exception {\r\n        // given\r\n        OrderRequest orderRequest = getOrderRequest();\r\n        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);\r\n        // when\r\n        mockMvc.perform(MockMvcRequestBuilders.post(\"/api/v1/order\")\r\n                        .contentType(\"application/json\")\r\n                        .content(orderRequestJson))\r\n                .andExpect(status().isCreated());\r\n        // then\r\n        Assertions.assertNotEquals(0, orderRepository.findAll().size());\r\n        // logs\r\n        log.info(\"Order placed successfully\");\r\n        log.info(\"Orders: {}\", orderRepository.findAll().stream().map(order -> {\r\n            String orderLineItems = order.getOrderLineItemsList().stream()\r\n                    .map(orderLineItem -> orderLineItem.getSkuCode() + \" \" + orderLineItem.getQuantity() + \" \" + orderLineItem.getPrice())\r\n                    .collect(Collectors.joining(\", \"));\r\n            return order.getOrderNumber() + \" \" + orderLineItems;\r\n        }).collect(Collectors.toList()));\r\n    }\r\n\r\n    @Test\r\n    @DisplayName(\"Get all orders\")\r\n    void shouldGetAllOrders() throws Exception {\r\n\r\n        // then\r\n        mockMvc.perform(MockMvcRequestBuilders.get(\"/api/v1/order\"))\r\n                .andExpect(status().isOk());\r\n        // logs\r\n        log.info(\"Orders: {}\", orderRepository.findAll().stream().map(order -> {\r\n            String orderLineItems = order.getOrderLineItemsList().stream()\r\n                    .map(orderLineItem -> orderLineItem.getSkuCode() + \" \" + orderLineItem.getQuantity() + \" \" + orderLineItem.getPrice())\r\n                    .collect(Collectors.joining(\", \"));\r\n            return order.getOrderNumber() + \" \" + orderLineItems;\r\n        }).collect(Collectors.toList()));\r\n    }\r\n\r\n    @Test\r\n    @DisplayName(\"Delete order\")\r\n    void shouldDeleteOrderById() throws Exception {\r\n        // given\r\n        OrderRequest orderRequest = getOrderRequest();\r\n        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);\r\n        var orderList = orderRepository.findAll();\r\n        int ordersCountBeforeDelete = orderList.size();\r\n        // when\r\n        mockMvc.perform(MockMvcRequestBuilders.delete(\"/api/v1/order/\" + orderList.get(orderList.size() - 1).getId()))\r\n                .andExpect(status().isOk());\r\n        orderList = orderRepository.findAll();\r\n        mockMvc.perform(MockMvcRequestBuilders.delete(\"/api/v1/order/\" + orderList.get(orderList.size() - 1).getId()))\r\n                .andExpect(status().isOk());\r\n        // then\r\n        int ordersCountAfterDelete = orderRepository.findAll().size();\r\n        Assertions.assertNotEquals(ordersCountBeforeDelete, ordersCountAfterDelete);\r\n\r\n\r\n    }\r\n\r\n    private OrderRequest getOrderRequest() {\r\n        OrderLineItemsDto orderLineItemsDto = OrderLineItemsDto.builder()\r\n                .skuCode(\"skuCode\")\r\n                .price(BigDecimal.valueOf(1300))\r\n                .quantity(1)\r\n                .build();\r\n        return OrderRequest.builder()\r\n                .orderLineItemsDtoList(List.of(orderLineItemsDto))\r\n                .build();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java
+--- a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java	(revision a9094a1a72cbd7a4e9601f8849b9fde896a4c80b)
++++ b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java	(date 1665737046729)
+@@ -6,15 +6,11 @@
+ import com.orcohen.orderservice.repository.OrderRepository;
+ import lombok.extern.slf4j.Slf4j;
+ import org.junit.jupiter.api.Assertions;
+-import org.junit.jupiter.api.BeforeAll;
+ import org.junit.jupiter.api.DisplayName;
+ import org.junit.jupiter.api.Test;
+ import org.springframework.beans.factory.annotation.Autowired;
+-import org.springframework.boot.test.autoconfigure.properties.PropertyMapping;
+ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+ import org.springframework.boot.test.context.SpringBootTest;
+-import org.springframework.test.context.DynamicPropertyRegistry;
+-import org.springframework.test.context.DynamicPropertySource;
+ import org.springframework.test.web.servlet.MockMvc;
+ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+ import org.testcontainers.containers.MySQLContainer;
+@@ -34,26 +30,11 @@
+ class OrderServiceApplicationTests {
+ 
+     @Container
+-    static MySQLContainer<?> mySQLContainer = new MySQLContainer<>("mysql:8.0.31")
++    private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer(
++            "mysql:8.0.23")
+             .withDatabaseName("order_service")
+-            .withUsername("something")
+-            .withPassword("something")
+-            .withExposedPorts(3306);
+-
+-    @DynamicPropertySource
+-    static void setProperties(DynamicPropertyRegistry registry) {
+-        registry.add("spring.datasource.url", mySQLContainer::getJdbcUrl);
+-        registry.add("spring.datasource.username", mySQLContainer::getUsername);
+-        registry.add("spring.datasource.password", mySQLContainer::getPassword);
+-        registry.add("spring.datasource.driver-class-name", mySQLContainer::getDriverClassName);
+-        registry.add("spring.jpa.database-platform", () -> "org.hibernate.dialect.MySQL8Dialect");
+-        mySQLContainer.start();
+-    }
+-
+-//    @BeforeAll
+-//    public static void setUp() {
+-//        mySQLContainer.start();
+-//    }
++            .withUsername("root")
++            .withPassword("root");
+     @Autowired
+     private MockMvc mockMvc;    // injected by @RequiredArgsConstructor
+     @Autowired
+@@ -73,7 +54,7 @@
+                         .content(orderRequestJson))
+                 .andExpect(status().isCreated());
+         // then
+-        Assertions.assertNotEquals(0, orderRepository.findAll().size());
++        Assertions.assertEquals(1, orderRepository.findAll().size());
+         // logs
+         log.info("Order placed successfully");
+         log.info("Orders: {}", orderRepository.findAll().stream().map(order -> {
+@@ -87,7 +68,14 @@
+     @Test
+     @DisplayName("Get all orders")
+     void shouldGetAllOrders() throws Exception {
+-
++        // given
++        OrderRequest orderRequest = getOrderRequest();
++        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);
++        // when
++        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/order")
++                        .contentType("application/json")
++                        .content(orderRequestJson))
++                .andExpect(status().isCreated());
+         // then
+         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/order"))
+                 .andExpect(status().isOk());
+@@ -100,27 +88,6 @@
+         }).collect(Collectors.toList()));
+     }
+ 
+-    @Test
+-    @DisplayName("Delete order")
+-    void shouldDeleteOrderById() throws Exception {
+-        // given
+-        OrderRequest orderRequest = getOrderRequest();
+-        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);
+-        var orderList = orderRepository.findAll();
+-        int ordersCountBeforeDelete = orderList.size();
+-        // when
+-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/v1/order/" + orderList.get(orderList.size() - 1).getId()))
+-                .andExpect(status().isOk());
+-        orderList = orderRepository.findAll();
+-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/v1/order/" + orderList.get(orderList.size() - 1).getId()))
+-                .andExpect(status().isOk());
+-        // then
+-        int ordersCountAfterDelete = orderRepository.findAll().size();
+-        Assertions.assertNotEquals(ordersCountBeforeDelete, ordersCountAfterDelete);
+-
+-
+-    }
+-
+     private OrderRequest getOrderRequest() {
+         OrderLineItemsDto orderLineItemsDto = OrderLineItemsDto.builder()
+                 .skuCode("skuCode")
+Index: order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java
+new file mode 100644
+--- /dev/null	(date 1665737049544)
++++ b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java	(date 1665737049544)
+@@ -0,0 +1,28 @@
++package com.orcohen.orderservice;
++
++import com.orcohen.orderservice.repository.OrderRepository;
++import org.junit.jupiter.api.BeforeAll;
++import org.springframework.boot.test.context.SpringBootTest;
++import org.springframework.orm.jpa.vendor.Database;
++import org.testcontainers.containers.MySQLContainer;
++import org.testcontainers.junit.jupiter.Testcontainers;
++
++@Testcontainers
++@SpringBootTest
++public class OrderServiceTest {
++    MySQLContainer dbServer ;
++    OrderRepository orderRepository;
++    Database database;
++
++//    @BeforeAll
++//    public void setUp() {
++//        dbServer = new MySQLContainer<>("mysql:8.0.31")
++//                .withDatabaseName("order_service")
++//                .withUsername("something")
++//                .withPassword("something")
++//                .withExposedPorts(3306);
++//        dbServer.start();
++//        database = Database.MYSQL;
++//        orderRepository =
++//    }
++}

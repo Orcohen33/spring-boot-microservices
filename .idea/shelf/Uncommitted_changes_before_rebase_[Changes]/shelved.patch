@@ -1,0 +1,463 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 2f8e57e118690744f9bf3b38a191c4c8f8184eba)
++++ b/.idea/misc.xml	(date 1665737012480)
+@@ -5,7 +5,14 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/pom.xml" />
++        <option value="$PROJECT_DIR$/inventory-service/pom.xml" />
++        <option value="$PROJECT_DIR$/order-service/pom.xml" />
+       </list>
++    </option>
++    <option name="ignoredFiles">
++      <set>
++        <option value="$PROJECT_DIR$/product-service/pom.xml" />
++      </set>
+     </option>
+   </component>
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"31c8b28e-f34d-4948-a72b-b4d63052114b\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2G2O5MQe6qp5pgTNThZQUeUOBtM\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"31c8b28e-f34d-4948-a72b-b4d63052114b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665583029284</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665583029284</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2f8e57e118690744f9bf3b38a191c4c8f8184eba)
++++ b/.idea/workspace.xml	(date 1665736985398)
+@@ -4,12 +4,47 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="31c8b28e-f34d-4948-a72b-b4d63052114b" name="Changes" comment="" />
++    <list default="true" id="31c8b28e-f34d-4948-a72b-b4d63052114b" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="package.json" />
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="JpbToolWindowState">
++    <option name="myId2FirstActivated">
++      <map>
++        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
++        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
++        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
++      </map>
++    </option>
++    <option name="myId2Visible">
++      <map>
++        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
++        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
++        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
++      </map>
++    </option>
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
+   <component name="ProjectId" id="2G2O5MQe6qp5pgTNThZQUeUOBtM" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -18,11 +53,151 @@
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "RequestMappingsPanelOrder0": "0",
++    "RequestMappingsPanelOrder1": "1",
++    "RequestMappingsPanelWidth0": "75",
++    "RequestMappingsPanelWidth1": "75",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false"
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "jdk.selected.JAVA_MODULE": "17",
++    "last_opened_file_path": "C:/Users/orcoh/Desktop/Programming/Projects/online-shopping-application/microservices/microservices-new/pom.xml",
++    "nodejs_package_manager_path": "npm",
++    "spring.configuration.checksum": "82177c4ea6e983232776383e4543ffc3"
+   }
+ }]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\inventory-service" />
++      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\order-service" />
++      <recent name="C:\Users\orcoh\Desktop\Programming\Projects\online-shopping-application\zip-files\microservices\microservices-new\product-service" />
++    </key>
++  </component>
++  <component name="RunAnythingCache">
++    <option name="myCommands">
++      <command value="mvn clean verify" />
++      <command value="mvn clean" />
++      <command value="mvn package" />
++    </option>
++  </component>
++  <component name="RunDashboard">
++    <option name="configurationTypes">
++      <set>
++        <option value="SpringBootApplicationConfigurationType" />
++      </set>
++    </option>
++  </component>
++  <component name="RunManager" selected="JUnit.OrderServiceApplicationTests">
++    <configuration name="OrderRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="order-service" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.orcohen.orderservice.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
++      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderRepositoryTest" />
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="OrderRepositoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="order-service" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.orcohen.orderservice.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
++      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderRepositoryTest" />
++      <option name="METHOD_NAME" value="test" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="OrderServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="order-service" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.orcohen.orderservice.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
++      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="OrderServiceApplicationTests.shouldGetAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="order-service" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.orcohen.orderservice.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
++      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
++      <option name="METHOD_NAME" value="shouldGetAllOrders" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="OrderServiceApplicationTests.shouldPlaceOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="order-service" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="com.orcohen.orderservice.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="com.orcohen.orderservice" />
++      <option name="MAIN_CLASS_NAME" value="com.orcohen.orderservice.OrderServiceApplicationTests" />
++      <option name="METHOD_NAME" value="shouldPlaceOrder" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="inventory-service" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.inventoryservice.InventoryServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="order-service" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.orderservice.OrderServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
++      <module name="product-service" />
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.orcohen.productservice.ProductServiceApplication" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="JUnit.OrderServiceApplicationTests" />
++        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldGetAllOrders" />
++        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldPlaceOrder" />
++        <item itemvalue="JUnit.OrderRepositoryTest.test" />
++        <item itemvalue="JUnit.OrderRepositoryTest" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -31,7 +206,28 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1665583029284</updated>
++      <workItem from="1665583030750" duration="1471000" />
++      <workItem from="1665591455795" duration="4037000" />
++      <workItem from="1665596537487" duration="5476000" />
++      <workItem from="1665642627351" duration="2413000" />
++      <workItem from="1665646416744" duration="4268000" />
++      <workItem from="1665735365848" duration="281000" />
++      <workItem from="1665735776018" duration="1143000" />
+     </task>
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.orcohen.orderservice;\r\n\r\nimport com.fasterxml.jackson.databind.ObjectMapper;\r\nimport com.orcohen.orderservice.dto.OrderLineItemsDto;\r\nimport com.orcohen.orderservice.dto.OrderRequest;\r\nimport com.orcohen.orderservice.repository.OrderRepository;\r\nimport lombok.extern.slf4j.Slf4j;\r\nimport org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;\r\nimport org.springframework.boot.test.context.SpringBootTest;\r\nimport org.springframework.test.web.servlet.MockMvc;\r\nimport org.springframework.test.web.servlet.request.MockMvcRequestBuilders;\r\nimport org.testcontainers.containers.MySQLContainer;\r\nimport org.testcontainers.junit.jupiter.Container;\r\nimport org.testcontainers.junit.jupiter.Testcontainers;\r\n\r\nimport java.math.BigDecimal;\r\nimport java.util.List;\r\nimport java.util.stream.Collectors;\r\n\r\nimport static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;\r\n\r\n@SpringBootTest\r\n@Testcontainers\r\n@AutoConfigureMockMvc\r\n@Slf4j\r\nclass OrderServiceApplicationTests {\r\n\r\n    @Container\r\n    private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer(\r\n            \"mysql:8.0.23\")\r\n            .withDatabaseName(\"order_service\")\r\n            .withUsername(\"root\")\r\n            .withPassword(\"root\");\r\n    @Autowired\r\n    private MockMvc mockMvc;    // injected by @RequiredArgsConstructor\r\n    @Autowired\r\n    private ObjectMapper objectMapper;    // injected by @RequiredArgsConstructor\r\n    @Autowired\r\n    private OrderRepository orderRepository;    // injected by @RequiredArgsConstructor\r\n\r\n    @Test\r\n    @DisplayName(\"Place order\")\r\n    void shouldPlaceOrder() throws Exception {\r\n        // given\r\n        OrderRequest orderRequest = getOrderRequest();\r\n        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);\r\n        // when\r\n        mockMvc.perform(MockMvcRequestBuilders.post(\"/api/v1/order\")\r\n                        .contentType(\"application/json\")\r\n                        .content(orderRequestJson))\r\n                .andExpect(status().isCreated());\r\n        // then\r\n        Assertions.assertEquals(1, orderRepository.findAll().size());\r\n        // logs\r\n        log.info(\"Order placed successfully\");\r\n        log.info(\"Orders: {}\", orderRepository.findAll().stream().map(order -> {\r\n            String orderLineItems = order.getOrderLineItemsList().stream()\r\n                    .map(orderLineItem -> orderLineItem.getSkuCode() + \" \" + orderLineItem.getQuantity() + \" \" + orderLineItem.getPrice())\r\n                    .collect(Collectors.joining(\", \"));\r\n            return order.getOrderNumber() + \" \" + orderLineItems;\r\n        }).collect(Collectors.toList()));\r\n    }\r\n\r\n    @Test\r\n    @DisplayName(\"Get all orders\")\r\n    void shouldGetAllOrders() throws Exception {\r\n        // given\r\n        OrderRequest orderRequest = getOrderRequest();\r\n        String orderRequestJson = objectMapper.writeValueAsString(orderRequest);\r\n        // when\r\n        mockMvc.perform(MockMvcRequestBuilders.post(\"/api/v1/order\")\r\n                        .contentType(\"application/json\")\r\n                        .content(orderRequestJson))\r\n                .andExpect(status().isCreated());\r\n        // then\r\n        mockMvc.perform(MockMvcRequestBuilders.get(\"/api/v1/order\"))\r\n                .andExpect(status().isOk());\r\n        // logs\r\n        log.info(\"Orders: {}\", orderRepository.findAll().stream().map(order -> {\r\n            String orderLineItems = order.getOrderLineItemsList().stream()\r\n                    .map(orderLineItem -> orderLineItem.getSkuCode() + \" \" + orderLineItem.getQuantity() + \" \" + orderLineItem.getPrice())\r\n                    .collect(Collectors.joining(\", \"));\r\n            return order.getOrderNumber() + \" \" + orderLineItems;\r\n        }).collect(Collectors.toList()));\r\n    }\r\n\r\n    private OrderRequest getOrderRequest() {\r\n        OrderLineItemsDto orderLineItemsDto = OrderLineItemsDto.builder()\r\n                .skuCode(\"skuCode\")\r\n                .price(BigDecimal.valueOf(1300))\r\n                .quantity(1)\r\n                .build();\r\n        return OrderRequest.builder()\r\n                .orderLineItemsDtoList(List.of(orderLineItemsDto))\r\n                .build();\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java
+--- a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java	(revision 2f8e57e118690744f9bf3b38a191c4c8f8184eba)
++++ b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceApplicationTests.java	(date 1665736990062)
+@@ -5,12 +5,23 @@
+ import com.orcohen.orderservice.dto.OrderRequest;
+ import com.orcohen.orderservice.repository.OrderRepository;
+ import lombok.extern.slf4j.Slf4j;
++import org.junit.Before;
+ import org.junit.jupiter.api.Assertions;
++import org.junit.jupiter.api.BeforeAll;
+ import org.junit.jupiter.api.DisplayName;
+ import org.junit.jupiter.api.Test;
++import org.mockito.Mock;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
+ import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
++import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureDataJpa;
++import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+ import org.springframework.boot.test.context.SpringBootTest;
++import org.springframework.boot.test.mock.mockito.MockBean;
++import org.springframework.test.context.DynamicPropertyRegistry;
++import org.springframework.test.context.DynamicPropertySource;
+ import org.springframework.test.web.servlet.MockMvc;
+ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+ import org.testcontainers.containers.MySQLContainer;
+@@ -25,16 +36,25 @@
+ 
+ @SpringBootTest
+ @Testcontainers
++@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+ @AutoConfigureMockMvc
+-@Slf4j
+ class OrderServiceApplicationTests {
+ 
+     @Container
+-    private static final MySQLContainer MY_SQL_CONTAINER = new MySQLContainer(
+-            "mysql:8.0.23")
++    static MySQLContainer mySQLContainer = (MySQLContainer) new MySQLContainer("mysql:8.0.31")
+             .withDatabaseName("order_service")
+-            .withUsername("root")
+-            .withPassword("root");
++            .withUsername("something")
++            .withPassword("something")
++            .withExposedPorts(3306);
++
++    @DynamicPropertySource
++    static void properties(DynamicPropertyRegistry registry) {
++        mySQLContainer.start();
++        registry.add("spring.datasource.url", mySQLContainer::getJdbcUrl);
++        registry.add("spring.datasource.username", mySQLContainer::getUsername);
++        registry.add("spring.datasource.password", mySQLContainer::getPassword);
++    }
++
+     @Autowired
+     private MockMvc mockMvc;    // injected by @RequiredArgsConstructor
+     @Autowired
+@@ -54,38 +74,32 @@
+                         .content(orderRequestJson))
+                 .andExpect(status().isCreated());
+         // then
+-        Assertions.assertEquals(1, orderRepository.findAll().size());
+-        // logs
+-        log.info("Order placed successfully");
+-        log.info("Orders: {}", orderRepository.findAll().stream().map(order -> {
+-            String orderLineItems = order.getOrderLineItemsList().stream()
+-                    .map(orderLineItem -> orderLineItem.getSkuCode() + " " + orderLineItem.getQuantity() + " " + orderLineItem.getPrice())
+-                    .collect(Collectors.joining(", "));
+-            return order.getOrderNumber() + " " + orderLineItems;
+-        }).collect(Collectors.toList()));
++        Assertions.assertNotEquals(0, orderRepository.findAll().size());
+     }
+ 
+     @Test
+     @DisplayName("Get all orders")
+     void shouldGetAllOrders() throws Exception {
++        mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/order"))
++                .andExpect(status().isOk());
++    }
++
++    @Test
++    @DisplayName("Delete order")
++    void shouldDeleteOrderById() throws Exception {
+         // given
+         OrderRequest orderRequest = getOrderRequest();
+         String orderRequestJson = objectMapper.writeValueAsString(orderRequest);
++        var orderList = orderRepository.findAll();
++        int ordersCountBeforeDelete = orderList.size();
+         // when
+-        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/order")
+-                        .contentType("application/json")
+-                        .content(orderRequestJson))
+-                .andExpect(status().isCreated());
++        mockMvc.perform(MockMvcRequestBuilders.delete("/api/v1/order/" + orderList.get(orderList.size() - 1).getId()))
++                .andExpect(status().isOk());
+         // then
+-        mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/order"))
+-                .andExpect(status().isOk());
+-        // logs
+-        log.info("Orders: {}", orderRepository.findAll().stream().map(order -> {
+-            String orderLineItems = order.getOrderLineItemsList().stream()
+-                    .map(orderLineItem -> orderLineItem.getSkuCode() + " " + orderLineItem.getQuantity() + " " + orderLineItem.getPrice())
+-                    .collect(Collectors.joining(", "));
+-            return order.getOrderNumber() + " " + orderLineItems;
+-        }).collect(Collectors.toList()));
++        int ordersCountAfterDelete = orderRepository.findAll().size();
++        Assertions.assertNotEquals(ordersCountBeforeDelete, ordersCountAfterDelete);
++
++
+     }
+ 
+     private OrderRequest getOrderRequest() {
+Index: order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java
+new file mode 100644
+--- /dev/null	(date 1665736961131)
++++ b/order-service/src/test/java/com/orcohen/orderservice/OrderServiceTest.java	(date 1665736961131)
+@@ -0,0 +1,28 @@
++package com.orcohen.orderservice;
++
++import com.orcohen.orderservice.repository.OrderRepository;
++import org.junit.jupiter.api.BeforeAll;
++import org.springframework.boot.test.context.SpringBootTest;
++import org.springframework.orm.jpa.vendor.Database;
++import org.testcontainers.containers.MySQLContainer;
++import org.testcontainers.junit.jupiter.Testcontainers;
++
++@Testcontainers
++@SpringBootTest
++public class OrderServiceTest {
++    MySQLContainer dbServer ;
++    OrderRepository orderRepository;
++    Database database;
++
++//    @BeforeAll
++//    public void setUp() {
++//        dbServer = new MySQLContainer<>("mysql:8.0.31")
++//                .withDatabaseName("order_service")
++//                .withUsername("something")
++//                .withPassword("something")
++//                .withExposedPorts(3306);
++//        dbServer.start();
++//        database = Database.MYSQL;
++//        orderRepository =
++//    }
++}
+Index: .idea/azure/azureSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/azure/azureSettings.xml b/.idea/azure/azureSettings.xml
+new file mode 100644
+--- /dev/null	(date 1665736961123)
++++ b/.idea/azure/azureSettings.xml	(date 1665736961123)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AzureSettings">
++    <option name="appInsights" value="rO0ABXVyAEtbTGNvbS5taWNyb3NvZnQuYXBwbGljYXRpb25pbnNpZ2h0cy5wcmVmZXJlbmNlLkFwcGxpY2F0aW9uSW5zaWdodHNSZXNvdXJjZTvCzxEP0C2HbAIAAHhwAAAAAA==" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Encoding\">\r\n    <file url=\"file://$PROJECT_DIR$/product-service/src/main/java\" charset=\"UTF-8\" />\r\n    <file url=\"file://$PROJECT_DIR$/product-service/src/main/resources\" charset=\"UTF-8\" />\r\n    <file url=\"file://$PROJECT_DIR$/src/main/java\" charset=\"UTF-8\" />\r\n    <file url=\"file://$PROJECT_DIR$/src/main/resources\" charset=\"UTF-8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+--- a/.idea/encodings.xml	(revision 2f8e57e118690744f9bf3b38a191c4c8f8184eba)
++++ b/.idea/encodings.xml	(date 1665737012487)
+@@ -1,6 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/inventory-service/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/inventory-service/src/main/resources" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/product-service/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/product-service/src/main/resources" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
