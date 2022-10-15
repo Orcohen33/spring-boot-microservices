@@ -38,14 +38,17 @@ public class InventoryService {
 
     @Transactional(readOnly = true)
     public List<InventoryResponse> isInStock(List<String> skuCode){
-        return inventoryRepository.findBySkuCodeIn(skuCode).stream()
+        log.info("Checking if skuCode {} is in stock", skuCode);
+        final var inventoryResponses = inventoryRepository.findBySkuCodeIn(skuCode).stream()
                 .map(inventory ->
                         InventoryResponse
                                 .builder()
                                 .skuCode(inventory.getSkuCode())
                                 .isInStock(inventory.getQuantity() > 0)
                                 .build()
-                ).peek(inventoryResponse -> log.info("[isInStock] skuCode: {}, is in stock: {}", inventoryResponse.getSkuCode(), inventoryResponse.isInStock()))
+                )
                 .collect(Collectors.toList());
+        log.info("Found {} inventory responses", inventoryResponses.size());
+        return inventoryResponses;
     }
 }

@@ -16,11 +16,11 @@ import java.util.List;
 @Slf4j
 public class OrderController {
 
-    private final OrderService orderService; // injected by @RequiredArgsConstructor
+    private final OrderService orderService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String placeOrder(@RequestBody OrderRequest orderRequest){ // <1>
+    public String placeOrder(@RequestBody OrderRequest orderRequest){ // OrderRequest is a DTO
         orderService.placeOrder(orderRequest);
         return "Order Placed";
     }
@@ -31,5 +31,9 @@ public class OrderController {
         return orderService.getAllOrders();
     }
 
-
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteOrder(@PathVariable Long id){
+        orderService.deleteOrder(id);
+    }
 }
