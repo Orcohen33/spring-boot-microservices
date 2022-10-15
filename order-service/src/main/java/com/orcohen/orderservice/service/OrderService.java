@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 public class OrderService {
 
     private final OrderRepository orderRepository;  // injected by @RequiredArgsConstructor
-    private final WebClient webClient;  // use asynchronous non-blocking requests
+    private final WebClient.Builder webClientBuilder;  // use asynchronous non-blocking requests
 
     /**
      * Create a new order
@@ -37,7 +37,6 @@ public class OrderService {
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
-        log.info("Order toString: {}", order);
 
         List<OrderLineItems> orderLineItems = orderRequest.getOrderLineItemsDtoList()
                 .stream()
@@ -51,17 +50,20 @@ public class OrderService {
                 .map(OrderLineItemsDto::getSkuCode).toList();
 
         // Call Inventory service and place order if product is in stock.
-        InventoryResponse[] inventoryResponses = webClient.get()
-                .uri("http://localhost:8083/api/v1/inventory/in-stock/",
+        InventoryResponse[] inventoryResponses = webClientBuilder.build().get()
+                .uri("http://inventory-service/api/v1/inventory/in-stock/",
                         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build()
                 )
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
                 .block();// to sync the call
 
-        boolean allInStock = Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock);
+        assert inventoryResponses != null ;
+        boolean allInStock = Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock)
+                && Arrays.stream(inventoryResponses).findAny().isPresent();
         if (allInStock) {
             orderRepository.save(order);
+            log.info("Order saved successfully");
         } else {
             log.info("Product is out of stock");
             throw new IllegalArgumentException("Product is out of stock");
@@ -94,5 +96,9 @@ public class OrderService {
         orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
         orderLineItems.setSkuCode(orderLineItemsDto.getSkuCode());
         return orderLineItems;
+    }
+
+    public void deleteOrder(Long id) {
+        orderRepository.deleteById(id);
     }
 }
