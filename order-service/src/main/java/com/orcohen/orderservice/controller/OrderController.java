@@ -20,7 +20,7 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String placeOrder(@RequestBody OrderRequest orderRequest){ // <1>
+    public String placeOrder(@RequestBody OrderRequest orderRequest){ // OrderRequest is a DTO
         orderService.placeOrder(orderRequest);
         return "Order Placed";
     }
